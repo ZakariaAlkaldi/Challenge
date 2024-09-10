@@ -155,10 +155,22 @@ ul {
   border: 2px solid #3a3a40;
   border-radius: 10px;
 }
+@media (max-width: 767px) {
+  .container .box {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .container .box .info .title {
   font-size: 28px;
   color: #d4e4f9;
   margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .container .box .info .title {
+    font-size: 22px;
+  }
 }
 .container .box .info .one {
   font-size: 14px;
@@ -166,8 +178,14 @@ ul {
   text-transform: capitalize;
   margin: 10px 0;
 }
+@media (max-width: 767px) {
+  .container .box .info .one {
+    font-size: 14px;
+  }
+}
 .container .box .info .one span {
   color: #37cc57;
+  font-weight: bold;
 }
 .container .box .info .two {
   font-size: 17px;
@@ -175,19 +193,35 @@ ul {
   text-transform: capitalize;
   margin: 10px 0 0;
 }
+@media (max-width: 767px) {
+  .container .box .info .two {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
 .container .box .button {
   display: flex;
   align-items: flex-end;
 }
 .container .box .button a {
-  color: black;
+  color: #0e141e;
   font-size: 18px;
+  font-weight: bold;
   text-transform: capitalize;
   background-color: #f4f4f5;
   padding: 11px 40px;
   border-radius: 5px;
   position: relative;
   transition: all 0.3s ease;
+}
+@media (max-width: 767px) {
+  .container .box .button {
+    margin: auto;
+  }
+  .container .box .button a {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
 }
 .container .box .button a:hover {
   background-color: #00751f;
